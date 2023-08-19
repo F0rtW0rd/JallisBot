@@ -1,7 +1,7 @@
 import telebot
 import time
 
-t = open()
+
 
 bot = telebot.TeleBot("6695149691:AAFKLaL51XbcsMpp-DE_Dw6V9q0VRS7_yrY")
 
@@ -44,11 +44,11 @@ def start(message):
         else:
             if message.chat.username == None:
                 if message.chat.last_name == None:
-                    bot.send_message(admins[1], f'Бот был запущен у {message.chat.first_name}')
+                    bot.send_message(admins[0], f'Бот был запущен у {message.chat.first_name}')
                 else:
-                    bot.send_message(admins[1], f'Бот был запущен у {message.chat.first_name} {message.chat.last_name}\r Новобранец: {message.chat.id}')
+                    bot.send_message(admins[0], f'Бот был запущен у {message.chat.first_name} {message.chat.last_name}\r Новобранец: {message.chat.id}')
             else:
-                bot.send_message(admins[1], f'Бот был запущен у {message.chat.username}')
+                bot.send_message(admins[0], f'Бот был запущен у {message.chat.username}')
         
 #■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■》》
 
